@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mobile | post</title>
+<meta name="viewport" content="width=device-width ,initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="icon" type="image/png" href="images/icon.png"/>
+</head>
+<body>
+    
+                <div class="container" id="container1"></div>
+             <div   id="homepage1">
+                 <div id='update'>
+                   <h2>  UPDATE STATUS</h2>
+                 </div>
+             </div>
+                 <div id="homepage" >
+                     <div class='container'>
+                       
+     <div class="tab">
+  <button  id="defaultOpen" class="tablinks" onclick="openContent(event, 'myposts')"  ><h3>1,290<br>My Posts</h3>
+  </button>
+  <button class="tablinks" onclick="openContent(event, 'bookmark')"><h3>580 <br>Bookmark</h3></button>
+  </div>
+           
+            <div id="myposts" class="tabcontent">
+ <img src='images/img1.png' class='image-responsive'>
+  <img src='images/img2.png' class='image-responsive'>
+   <img src='images/img3.png' class='image-responsive'>
+    <img src='images/img4.png' class='image-responsive'>
+     <img src='images/img5.png' class='image-responsive'>
+      <img src='images/img6.png' class='image-responsive'>
+       <img src='images/img7.png' class='image-responsive'>
+        <img src='images/img8.png' class='image-responsive'>
+         <img src='images/img9.png' class='image-responsive'>
+</div>
+
+           <div id="bookmark" class="tabcontent">
+  <h3>Recent bookmarks</h3>
+  <div id="bookmarks1">
+<img src='images/img1.png' class='image-responsive'>
+<p>Family Health Tips: Taking advantage of fruits and vegetables.<br><br>
+   <i> <span class='fa fa-circle fa-2x'></span> 66,083  </i>   <i><span class='fa fa-circle fa-2x'></span> 32,065</i>  <i> <span class='fa fa-circle fa-2x'></span><i style='color:red;'> SHARE</i></i>
+  
+</p>
+</div>
+<hr>
+  <div id="bookmarks2">
+<img src='images/img4.png' class='image-responsive'>
+<p>Family Health Tips: Taking advantage of fruits and vegetables. <br><br>
+ <i> <span class='fa fa-circle fa-2x'></span> 24,083  </i>   <i><span class='fa fa-circle fa-2x'></span> 12,065</i>  <i> <span class='fa fa-circle fa-2x'></span><i style='color:red;'> SHARE</i></i>
+
+</p>
+</div>
+<hr>
+  <div id="bookmarks3">
+<img src='images/img7.png' class='image-responsive'>
+<p>Barcelonia is still highly valued in the world of football. <br><br>
+ <i> <span class='fa fa-circle fa-2x'></span> 45,033  </i>   <i><span class='fa fa-circle fa-2x'></span> 22,075</i>  <i> <span class='fa fa-circle fa-2x'></span><i style='color:red;'> SHARE</i></i>
+
+</p>
+</div>
+<div id='previous'>
+<h3>Previous bookmarks</h3>
+</div>
+<div id="bookmarks4">
+<img src='images/img8.png' class='image-responsive'>
+<p>The best way to take that breathe taking.<br><br>
+ <i> <span class='fa fa-circle fa-2x'></span> 12,083  </i>   <i><span class='fa fa-circle fa-2x'></span> 11,065</i>  <i> <span class='fa fa-circle fa-2x'></span><i style='color:red;'> SHARE</i></i>
+
+
+</p>
+</div>
+
+</div>
+
+            </div>
+            </div>
+            </body>
+            <script>
+
+
+                function openContent(evt, Content) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(Content).style.display = "block";
+    evt.currentTarget.className += " active";
+   
+}
+
+ document.getElementById("defaultOpen").click();
+                </script>
+            </html>
